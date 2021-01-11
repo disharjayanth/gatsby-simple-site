@@ -1,6 +1,11 @@
 module.exports = {
-  siteMetadata: {
-    title: "My Gatsby Site",
-  },
-  plugins: [],
-};
+  plugins: [
+    'gatsby-plugin-postcss',
+    {
+      resolve: `gatsby-plugin-typography`,
+      options: {
+        pathToConfigModule: `src/utils/typography`,
+      },
+    },
+  ],
+}
